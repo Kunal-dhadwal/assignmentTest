@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/bundle.js",
+    "start": "tsc && node dist/index.js",
     "build": "webpack --mode production",
     "build-mac":"webpack --mode development"
   },
