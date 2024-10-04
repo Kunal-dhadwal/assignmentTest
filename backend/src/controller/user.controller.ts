@@ -60,5 +60,19 @@ export const deleteUser = (req: Request, res: Response):any => {
   res.status(204).send("Deleted userid:"+" "+userId);
 };
 
-
-
+//sorting
+export const sortUsers = (req: Request, res: Response): any => {
+    const { sortBy } = req.query;
+  
+    if (sortBy === 'name') {
+      const sortedByName = [...users].sort((a, b) => a.name.localeCompare(b.name));
+      return res.json(sortedByName);
+    }
+  
+    if (sortBy === 'age') {
+      const sortedByAge = [...users].sort((a, b) => a.age - b.age);
+      return res.json(sortedByAge);
+    }
+  
+    return res.status(400).json({ message: 'Invalid sort parameter. Use "name" or "age".' });
+  };
