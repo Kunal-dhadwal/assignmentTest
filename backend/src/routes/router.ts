@@ -3,7 +3,6 @@ import { createUser, getUsers, getUserById, updateUser, deleteUser, sortUsers } 
 
 const router = express.Router();
 
-// CRUD 
 router.post('/users', createUser);
 router.get('/users', getUsers);
 router.get('/users/:id', getUserById);

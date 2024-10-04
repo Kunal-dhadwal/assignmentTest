@@ -4,7 +4,6 @@ import { User } from '../model/user';
 let users: User[] = [];
 let nextId = 1;
 
-// POST /api/users
 export const createUser = (req: Request, res: Response):any => {
   const { name, email, age } = req.body;
 
