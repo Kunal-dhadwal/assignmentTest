@@ -3,6 +3,14 @@
 
 A simple RESTful API built with Node.js, Express, and TypeScript for managing user profiles.
 
+## Prerequisites
+- [Node.js](https://nodejs.org/) (version 18.x or higher)
+- [npm](https://www.npmjs.com/) (version 6.x or higher)
+
+To install Node.js and npm, follow the instructions [here](https://nodejs.org/en/download/).
+
+## Setup Instructions
+
 ## Setup Instructions
 
 1. **Clone the repository:**
